@@ -2,8 +2,60 @@
 <html>
 <head>
 	<title>Hello Coursera</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="js/main"></script>
 </head>
 <body>
-<h1>Hello Coursera!</h1>
+<form id="form1">
+ <div class="oj-dialog-body">
+        <div >
+            <div  style="margin-top: 8px;margin-bottom: 8px; display: block; ">
+                <span data-bind="text: 'The review branch will be merged into the target branch.'"></span>
+            </div>
+        </div>
+        <div data-bind="visible: true " class="oj-flex" style="margin-top: 10px;">
+            <span  data-bind="text: 'Status of the linked builds:'"></span>
+            <span class="sidebar_button" style="padding-left: 10px; padding-right: 10px; padding-bottom: 2px; padding-top: 2px;">
+                <span style="font-weight: bold; text-transform: uppercase;" data-bind="text:'Not Built'"></span>
+            </span>
+        </div>
+        <div style='text-align: left;margin-top: 10px;'>
+            <div class="oj-flex" id="mergeCheckboxset" data-bind="ojComponent: {component: 'ojCheckboxset', value: options}" >
+                <span class="oj-choice-row">
+                    <input id="mergeopt" type="checkbox" value="Squash">
+                    <label for="mergeopt" data-bind="text: 'Squash commits'"></label>
+                </span>
+                <span class="oj-choice-row">
+                    <input id="deleteopt" type="checkbox" value="Delete">
+                    <label for="deleteopt" data-bind="text: 'Delete branch'"></label>
+                </span>
+            </div>
+            
+            <div style="padding-top: 4px;"> 
+        <span class="oj-choice-row">
+            <input checked id="closeissuesopt-checkbox" data-bind="checked: 'true'" class="oj-checkbox oj-component oj-enabled" id="closeissuesopt" type="checkbox" value="closeIssues">
+            <label for="closeissuesopt" data-bind="text: 'Resolve (close) linked issues'"></label>
+        </span>
+        <div id="issues-to-close-checkboxset" data-bind="ojComponent: {component: 'ojCheckboxset', value: issuesToCloseIds}" >
+            <div style="padding-left: 26px;"> 
+                <span class="oj-choice-row">
+                    <input  data-bind="attr: {'id': 'close-issue-' + 1 + 'opt', 'value': 'ALM-1234 Valid defect'}" type="checkbox">
+                    <label data-bind="attr: {'for': 'close-issue-' + 2 + 'opt'}, text: 'ALM-1234'"></label>
+                </span>
+            </div>
+        </div>
+    </div> 
+        </div>
+        <div class="oj-flex" style="margin-top: 10px;">
+            <label for="merge-commit-message" data-bind="text: 'Commit Message'"></label>
+            <textarea  id="merge-commit-message"  data-bind="attr:{placeholder: automaticCommitMessage},
+                                 ojComponent: {component: 'ojTextArea', value: automaticCommitMessage, rootAttributes:{style:'max-width: none;height: 200px;'}}" style="height: 200px;">
+            </textarea>
+        </div>
+    </div>
+    <div class="oj-dialog-footer" style="overflow: hidden">
+        <button id="button-ok"  data-bind="ojComponent: {component: 'ojButton', label:'Merge'}"> </button>
+        <button id="button-cancel"  data-bind="ojComponent: {component: 'ojButton', label:'Cancel'}"> </button>
+    </div>
+</form>
 </body>
 </html>
