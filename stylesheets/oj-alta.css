@@ -410,7 +410,7 @@ html {
 /* body */
 /* --------------------------------------------------------------- */
 body {
-  background-image: url("images/texture.png");
+  background-image: url("../images/texture.png");
   background-repeat: repeat;
   background-position: top left;
   color: #333333;
