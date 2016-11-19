@@ -22,13 +22,13 @@
 <body>
 <form id="form1">
  <div id="page-tasks-jiraconfig" class="admin-page">
-    <!-- ko ifnot: dataLoaded -->
+    <!-- ko ifnot: true -->
     <div class="data-loading"></div>
     <!-- /ko -->
 
     <!-- ko if: true -->
     <div class="page-header" 
-         data-bind="if: $data.pageContent() === 'new'">
+         data-bind="if: 'some' === 'new'">
         <h1 class="page-header-title">
             <a class="breadcrumb-back"
                data-bind="attr: {href: '#projects/' + projectUrlId() + '/admin/tasks/jiraconfig',
@@ -44,7 +44,7 @@
 
     <div class="oj-form">
         <div class="oj-flex">
-            <!-- ko if: $data.pageContent() === 'products' -->
+            <!-- ko if: true -->
             <div class="oj-flex-item oj-md-3" style="padding-right: 20px;">
                 <div id="jira-fields">
                     <a id="jira-fields-add" class="oj-button-confirm"
@@ -110,6 +110,7 @@
 
         </div>
     </div>
+    <!-- /ko -->
 
     <script type="text/html" id="mandatory-fields">
 
