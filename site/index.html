@@ -27,6 +27,7 @@
     <!-- /ko -->
 
     <!-- ko if: true -->
+    <div class="oj-flex">
     <div class="page-header" 
          data-bind="if: 'some' === 'new'">
         <h1 class="page-header-title">
@@ -71,6 +72,8 @@
                 </div>
             </div>
 
+            <!-- /ko --> 
+
                 <div class="oj-flex-item oj-md-3 webhooks-property-label">
                     <label for="inputSearch">Jira Project</label>
                     <input id="inputSearch" placeholder="Search Jira Projects..."
@@ -98,7 +101,7 @@
                               ojComponent: {component: 'ojInputPassword'}">
                     </div>
                 
-                <!-- /ko -->  
+                 
 
                 <div class="oj-flex-item"
                      data-bind="css: {'oj-md-9': false}">
@@ -111,6 +114,8 @@
         </div>
     </div>
     <!-- /ko -->
+
+    </div>
 
     <script type="text/html" id="mandatory-fields">
 
