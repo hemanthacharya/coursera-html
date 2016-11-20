@@ -55,10 +55,10 @@ function(oj, ko, $)
 
         this.pwd = ko.observable();
 
-        
+
         this.templateList = {
           data: ko.observableArray(),
-          selectedProduct: ko.observable();
+          selectedProduct: ko.observable()
 
         };
       }
