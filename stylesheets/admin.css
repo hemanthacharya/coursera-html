@@ -1,0 +1,73 @@
+/*!
+ * Copyright (c) 2015, 2016, Oracle and/or its affiliates. All rights reserved.
+ */
+pre.code-content {
+    padding: 5px; 
+    background-color: #f2f4f7; 
+    border: 1px solid #d6dfe6; 
+    margin: 0; 
+    overflow: auto; 
+}
+
+pre.headers-content .key { 
+    color: #3e6aac; 
+}
+
+hr.vertical {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    width: 28px;
+    display: inline-block;
+    margin: 0 -6px 4px -10px;
+}
+
+.admin-page .page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-page .page-header .page-header-title {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    font-weight: inherit;
+}
+
+.admin-page .page-header .page-header-title .breadcrumb-back {
+    font-size: inherit; 
+    font-weight: inherit; 
+    border-right: 1px solid #d6dfe6;
+    margin-bottom: 0; 
+    height: 30px;
+}
+
+.admin-page .page-header .page-header-title .breadcrumb-current {
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 2.286rem;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 9px;
+}
+
+#page-admin-webhooks .checkbox-value {
+    align-items: baseline;
+    height: 42px;
+}
+
+#page-admin-webhooks .checkbox-value .oj-flex-item:last-child {
+    align-self: center;
+}
+
+.admin-page .data-loading {
+    text-align: center;
+}
+
+.admin-page .data-loading:before {
+    content: url("../images/loader.gif");
+}

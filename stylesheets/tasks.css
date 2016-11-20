@@ -1,0 +1,318 @@
+/*!
+ * Copyright (c) 2015, 2016, Oracle and/or its affiliates. All rights reserved.
+ */
+#page-admin-tasks #issue-tabs .oj-tabs-panel {
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0px;
+}
+
+#page-tasks-tags #tag-list-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-tasks-tags #tag-list-header,
+#page-tasks-tags #tag-list-content {
+    max-width: 400px;
+}
+
+#page-tasks-tags #tag-list-content #tag-list-table {
+    width: 100%;
+}
+
+#page-tasks-tags #tag-list-filter {
+    max-width: 210px; 
+    width: 100%; 
+    float: left;
+    margin-left: 6px;
+}
+
+#page-tasks-products .warn-icon,
+#page-tasks-custom-fields .warn-icon {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#page-tasks-products #product-list,
+#page-tasks-custom-fields #field-list {
+    min-width: 170px;
+    text-align: right;
+}
+
+#page-tasks-products #product-list #product-list-content,
+#page-tasks-custom-fields #field-list #field-list-content {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    overflow-y: hidden;
+    border: 1px solid #dfe4e7;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #fcfdfe;
+    box-sizing: border-box;
+}
+
+#page-tasks-products #product-list #product-list-content > div, 
+#page-tasks-custom-fields #field-list #field-list-content > div {
+    padding: 2px;
+}
+
+#page-tasks-products #product-list #product-list-content .product-list-item,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+#page-tasks-products #product-list #product-list-content .product-list-item .product-name,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item .field-name {
+    padding-left: 3px;
+    margin-bottom: 0;
+    flex: 1 0;
+}
+
+#page-tasks-products #product-list #product-list-content .product-list-item .product-buttons,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item .field-buttons {
+    flex: 0 0 32px;
+    margin: 0 0 0 3px;
+}
+
+
+#page-tasks-products #product-list #product-list-content .product-list-item.product-selected,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item.field-selected {
+    background-color: #cbe1f4;
+}
+
+#page-tasks-products #product-list #product-list-content .product-list-item:hover,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item:hover, 
+#page-tasks-products #product-releases tr:hover td,
+#page-tasks-products #product-components tr:hover td,
+#page-tasks-products #product-releaseTags tr:hover td,
+#page-tasks-tags #tag-list-table tr:hover td {
+    background-color: #ebeced;
+}
+
+#page-tasks-products #product-releases td.only-row,
+#page-tasks-products #product-components td.only-row,
+#page-tasks-products #product-releaseTags td.only-row,
+#page-tasks-custom-fields #field-values td.only-row {
+    border-top: none;
+}
+
+#page-tasks-products .product-name,
+#page-tasks-custom-fields .field-name,
+#page-tasks-custom-fields .field-description,
+#page-tasks-custom-fields .field-type {
+    max-width: 100%;
+}
+
+#page-tasks-products .product-description {
+    max-width: 100%;
+    height: 60px;
+}
+
+#page-tasks-products #product-list #product-list-content .product-buttons,
+#page-tasks-custom-fields #field-list #field-list-content .field-buttons {
+    margin: 0;
+    display: none;
+}
+
+#page-tasks-products #product-list #product-list-content .product-list-item:hover > .product-buttons,
+#page-tasks-products #product-list #product-list-content .product-list-item.product-selected .product-buttons,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item:hover > .field-buttons,
+#page-tasks-custom-fields #field-list #field-list-content .field-list-item.field-selected .field-buttons {
+    display: inline-block;
+}
+
+#page-tasks-products #product-content-new,
+#page-tasks-custom-fields #field-content-new {
+    width: 100%;
+}
+
+#page-tasks-products .product-info,
+#page-tasks-custom-fields .field-info {
+    display: flex; 
+    justify-content: space-between;
+}
+
+#page-tasks-products .product-info-message,
+#page-tasks-custom-fields .field-info-message {
+    flex: 1 0 200px;
+    min-width: 200px;
+}
+
+#page-tasks-products .product-label-column,
+#page-tasks-custom-fields .field-label-column {
+    flex: 0 0 80px;
+}
+
+#page-tasks-products .product-column,
+#page-tasks-custom-fields .field-column {
+    flex: 0 1 800px;
+}
+
+#page-tasks-products #product-releases .release-drag-placeholder,
+#page-tasks-custom-fields #field-values .value-drag-placeholder {
+    height: 41px;
+    background-color: lightyellow;
+}
+
+#page-tasks-products #product-component-filter {
+    display: inline-block;
+    width: 250px;
+}
+
+#page-tasks-products #product-releases,
+#page-tasks-products #product-components,
+#page-tasks-products #product-releaseTags,
+#page-tasks-custom-fields #field-values {
+    width: 100%;
+}
+
+#page-tasks-products #product-releases td,
+#page-tasks-products #product-components td,
+#page-tasks-products #product-releaseTags td,
+#page-tasks-tags #tag-list-table td,
+#page-tasks-custom-fields #field-values td {
+    padding: 0.5em;
+}
+
+#page-tasks-products #product-releases .release-edit-element,
+#page-tasks-products #product-components .component-edit-element,
+#page-tasks-products #product-releaseTags .releaseTag-edit-element,
+#page-tasks-tags .tag-edit-element,
+#page-tasks-custom-fields .value-edit-element {
+    margin: 0px;
+    max-width: 100%;
+}
+#page-tasks-products #product-releases .name-column,
+#page-tasks-products #product-components .name-column,
+#page-tasks-products #product-releaseTags .name-column {
+    width: 200px;
+}
+
+#page-tasks-custom-fields #field-values .name-column {
+    width: 300px;
+}
+
+#page-tasks-products #product-components .owner-column {
+    width: 250px;
+}
+
+#page-tasks-products #product-releases .default-column, 
+#page-tasks-products #product-components .default-column {
+    width: 70px;
+    min-width: 70px;
+}
+
+#page-tasks-products #product-releases .action-column,
+#page-tasks-products #product-components .action-column,
+#page-tasks-products #product-releaseTags .action-column,
+#page-tasks-tags .action-column,
+#page-tasks-custom-fields .action-column {
+    width: 37px;
+    min-width: 37px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#page-tasks-products #product-releases .action-column .milestone-remove-button .details-icon:before,
+#page-tasks-products #product-components .action-column .component-remove-button .details-icon:before,
+#page-tasks-products #product-releaseTags .action-column .releaseTag-remove-button .details-icon:before {
+    content: url("../images/func_info_16_ena.png");
+}
+
+#page-tasks-products #product-releases .action-column .milestone-remove-button:hover .details-icon:before,
+#page-tasks-products #product-components .action-column .component-remove-button:hover .details-icon:before,
+#page-tasks-products #product-releaseTags .action-column .releaseTag-remove-button:hover .details-icon:before {
+    content: url("../images/func_info_16_hov.png");
+}
+
+
+#page-tasks-products #product-releases .action-column .milestone-remove-button:active .details-icon:before,
+#page-tasks-products #product-components .action-column .component-remove-button:active .details-icon:before,
+#page-tasks-products #product-releaseTags .action-column .releaseTag-remove-button:active .details-icon:before {
+    content: url("../images/func_info_16_act.png");
+}
+
+#page-tasks-products #product-releases .action-column .milestone-remove-button:active:hover .details-icon:before,
+#page-tasks-products #product-components .action-column .component-remove-button:active:hover .details-icon:before,
+#page-tasks-products #product-releaseTags .action-column .releaseTag-remove-button:active:hover .details-icon:before {
+    content: url("../images/func_info_16_onb.png");
+}
+
+#page-tasks-products #product-releases .action-column .milestone-remove-button:disabled .details-icon:before,
+#page-tasks-products #product-components .action-column .component-remove-button:disabled .details-icon:before,
+#page-tasks-products #product-releaseTags .action-column .releaseTag-remove-button:disabled .details-icon:before {
+    content: url("../images/func_info_16_dis.png");
+}
+
+#page-tasks-products .invalid,
+#page-tasks-custom-fields .invalid {
+    border-radius: 2px;
+    border: 2px solid #dd6666;
+    padding: 2px;
+}
+
+#page-tasks-products .button-confirm .confirm-icon:before {
+    content: url("../images/func_conf_16_ena.png");
+}
+
+#page-tasks-products .button-confirm:hover .confirm-icon:before {
+    content: url("../images/func_conf_16_hov.png");
+}
+
+#page-tasks-products .button-confirm:active .confirm-icon:before {
+    content: url("../images/func_conf_16_ena.png");
+    /*content: url("../images/func_conf_16_act.png");*/
+}
+
+#page-tasks-products .button-confirm:disabled .confirm-icon:before {
+    content: url("../images/func_conf_16_dis.png");
+}
+
+#page-tasks-products .button-confirm {
+    width: 29px;
+}
+
+#page-tasks-products .button-confirm, 
+#page-tasks-products .button-remove,
+#page-tasks-tags .button-remove,
+#page-tasks-custom-fields .button-remove {
+    margin-bottom: 0;
+}
+
+.admin-page .oj-button-confirm {
+    min-width: 175px;
+}
+
+#page-tasks-products #product-releases-add,
+#page-tasks-products .product-components-buttons,
+#page-tasks-products #product-releaseTags-add,
+#page-tasks-custom-fields #value-list-add {
+    flex: 0 1;
+}
+
+#page-tasks-products .product-components-buttons {
+    min-width: 429px;
+    white-space: nowrap;
+}
+
+#page-tasks-products .oj-table-body-row,
+#page-tasks-custom-fields .oj-table-body-row {
+    font-size: inherit;
+}
+
+#page-tasks-products .oj-table-footer-row,
+#page-tasks-tags .oj-table-footer-row,
+#page-tasks-custom-fields .oj-table-footer-row {
+    background-color: #f2f4f7;
+    border-top: 1px solid #d6dfe6;
+    font-size: inherit;
+}
