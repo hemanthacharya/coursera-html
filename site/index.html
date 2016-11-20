@@ -4,6 +4,8 @@
 	<title>Hello Coursera</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../javascripts/main"></script>
 	<link rel="stylesheet" href="../stylesheets/oj-alta.css">
+	<link rel="stylesheet" href="../stylesheets/admin.css">
+	<link rel="stylesheet" href="../stylesheets/tasks.css">
 	<style type="text/css">
 		.content-container {
   margin: 10px;
@@ -32,7 +34,7 @@
          data-bind="if: false">
         <h1 class="page-header-title">
             <a class="breadcrumb-back"
-               data-bind="attr: {href: '#projects/' + projectUrlId() + '/admin/tasks/jiraconfig',
+               data-bind="attr: {href: '#projects/' + 'alm' + '/admin/tasks/jiraconfig',
                                      title: 'Return to list'},
                               ojComponent: {component: 'ojButton', label: 'Jira Config',
                                             icons: {start:'oj-fwk-icon-caret-start oj-fwk-icon'}, chroming: 'half' }"></a>
@@ -78,7 +80,7 @@
                     <label for="inputSearch">Jira Project</label>
                     <input id="inputSearch" placeholder="Search Jira Projects..."
                            data-bind="ojComponent: {
-          component: 'ojInputSearch',
+          component: 'ojInputSearch', value: jiraprojects, 
           rootAttributes: {style:'max-width: 20em'}}">
                 </div>
                     <div class="oj-flex-item oj-md-3 webhooks-property-label">
@@ -86,9 +88,9 @@
                               attr: { for: 'jiraproject-username' }" ></label>
                                             <input type="text"
                                data-bind="attr: {id: 'jiraproject-username'}, 
-                              ojComponent: {component: 'ojInputText'}">
+                              ojComponent: {component: 'ojInputText', value: username}">
                     </div>
-                    <div class="webhooks-jira-emailid-description"
+                    <div class="oj-flex-item oj-md-3 webhooks-jira-emailid-description"
                          data-bind="text: 'Enter Jira Username who has admin access to the above mentioned project'"></div>
                
                 
@@ -98,7 +100,7 @@
                     
                         <input type="password" maxlength="30"
                                data-bind="attr: {id: 'jiraproject-pwd' }, 
-                              ojComponent: {component: 'ojInputPassword'}">
+                              ojComponent: {component: 'ojInputPassword', value: pwd}">
                     </div>
                 
                  

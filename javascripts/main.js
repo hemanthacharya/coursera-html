@@ -48,9 +48,19 @@ function(oj, ko, $)
     function()
     {
       function ValueModel() {
-        this.automaticCommitMessage = ko.observable("Somewhat long value");
-        this.options = ko.observableArray(["Squash","Delete"]);
-        this.issuesToCloseIds = ko.observableArray();
+        
+        this.pageContent = ko.observable();
+        this.jiraprojects = ko.observable();
+        this.username = ko.observable();
+
+        this.pwd = ko.observable();
+
+        
+        this.templateList = {
+          data: ko.observableArray(),
+          selectedProduct: ko.observable();
+
+        };
       }
       ko.applyBindings(new ValueModel(), document.getElementById('form1'));
     }
